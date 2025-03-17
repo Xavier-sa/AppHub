@@ -1,0 +1,20 @@
+  main.py
+controller/
+  cadastro_controller.py
+  login_controller.py
+database/
+  conexao.py
+  maumu.sql
+model/
+  usuario.py
+view/
+  cadastro.py
+  login.py
+view\images/
+view\ui/
+  cadastro.ui
+  login.ui
+  perfil.ui
+  ui_cadastro.py
+  ui_login.py
+  ui_perfil.py

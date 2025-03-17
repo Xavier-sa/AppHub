@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CadastroWindow</class>
+ <widget class="QMainWindow" name="CadastroWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>586</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cadastro de Usuário</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #222222;
+    color: #FFD700;
+    font-family: 'Arial', sans-serif;
+}
+
+QLabel {
+    color: #F57C00;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+QLineEdit {
+    background-color: #333333;
+    color: #FFD700;
+    border: 2px solid #F57C00;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+QPushButton {
+    background-color: #1976D2;
+    color: #FFFFFF;
+    border: 2px solid #F57C00;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+QPushButton:hover {
+    background-color: #F57C00;
+    color: #222222;
+    border-color: #FFD700;
+}
+
+QPushButton:pressed {
+    background-color: #D84315;
+}
+
+QLineEdit:focus {
+    border: 2px solid #FFD700;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_titulo">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;CADASTRO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="senha">
+        <property name="echoMode">
+         <enum>QLineEdit::EchoMode::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>Senha</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLineEdit" name="salario">
+        <property name="placeholderText">
+         <string>Salário</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLineEdit" name="despesa">
+        <property name="placeholderText">
+         <string>Despesa</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLineEdit" name="investimentos">
+        <property name="placeholderText">
+         <string>Investimentos</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLineEdit" name="rendaextra">
+        <property name="placeholderText">
+         <string>Renda Extra</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLineEdit" name="veiculos">
+        <property name="placeholderText">
+         <string>Veículos</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLineEdit" name="gasolina">
+        <property name="placeholderText">
+         <string>Gasolina</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLineEdit" name="cursos">
+        <property name="placeholderText">
+         <string>Cursos</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QPushButton" name="cadastrar_btn">
+        <property name="text">
+         <string>Cadastrar</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QPushButton" name="voltar_login_btn">
+        <property name="text">
+         <string>LOGIN</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="nome">
+        <property name="placeholderText">
+         <string>Nome</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
