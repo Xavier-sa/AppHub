@@ -18,7 +18,7 @@ QLabel {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-   
+    text-transform: uppercase;
 }
 
 QLineEdit {
@@ -39,7 +39,7 @@ QPushButton {
     font-weight: bold;
     padding: 12px;
     margin-top: 15px;
-   
+    
 }
 
 QPushButton:hover {

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GerenciadorDeRenda</class>
+ <widget class="QWidget" name="GerenciadorDeRenda">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gerenciador de Renda</string>
+  </property>
+  <widget class="QLineEdit" name="inputDescricao">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>200</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Descrição</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="inputValor">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Valor</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAdicionarReceita">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Adicionar Receita</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAdicionarDespesa">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>60</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Adicionar Despesa</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnGerarRelatorio">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>310</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Gerar Relatório</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="outputRelatorio">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>310</width>
+     <height>200</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

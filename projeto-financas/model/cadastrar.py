@@ -8,6 +8,7 @@ from PySide6.QtWidgets import (
     QApplication, QMainWindow, QLineEdit, QFormLayout, QVBoxLayout, QWidget, QPushButton, QMessageBox
 )
 
+# Importação relativa
 from .perfil import PerfilWindow
 
 STYLE = """
@@ -22,6 +23,7 @@ QLabel {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
+    text-transform: uppercase;
 }
 
 QLineEdit {
@@ -42,6 +44,7 @@ QPushButton {
     font-weight: bold;
     padding: 12px;
     margin-top: 15px;
+    
 }
 
 QPushButton:hover {
@@ -124,23 +127,19 @@ class CadastroWindow(QMainWindow):
         layout.addLayout(form_layout)
         self.widget.setLayout(layout)
 
-   
-        
     def connect_db(self):
-        """Conecta ao banco de dados MySQL usando o endereço 127.0.0.1 e a porta 3306"""
+        """Conecta ao banco de dados MySQL"""
         try:
             conn = mysql.connector.connect(
-                host="127.0.0.1",  
-                port=3306,  
-                user="root",  
-                password="", 
-                database="mau_mau"  
+                host="localhost",
+                user="root",
+                password="",
+                database="mau_mau"
             )
             return conn
         except mysql.connector.Error as err:
             self.show_message("Erro", f"Erro ao conectar ao banco de dados: {err}")
             return None
-
 
     def cadastrar(self):
         # Validação dos dados

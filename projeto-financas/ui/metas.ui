@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MetasWindow</class>
+ <widget class="QMainWindow" name="MetasWindow">
+  <property name="windowTitle">
+   <string>Metas do Usuário</string>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>100</x>
+    <y>100</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+
+    <!-- Exibir o nome do usuário -->
+    <widget class="QLabel" name="label_nome">
+     <property name="text">
+      <string>Metas de Usuário</string>
+     </property>
+     <property name="styleSheet">
+      <string>font: bold 14px; color: blue;</string>
+     </property>
+    </widget>
+
+    <!-- Tabela para exibir as metas -->
+    <widget class="QTableWidget" name="tabela_metas">
+     <property name="columnCount">
+      <number>4</number>
+     </property>
+     <property name="rowCount">
+      <number>0</number>
+     </property>
+     <column>
+      <property name="text">
+       <string>Meta</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Valor Total</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Valor Atual</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Status</string>
+      </property>
+     </column>
+    </widget>
+
+    <!-- Botão para adicionar uma nova meta -->
+    <widget class="QPushButton" name="btn_adicionar_meta">
+     <property name="text">
+      <string>Adicionar Meta</string>
+     </property>
+    </widget>
+    
+   </layout>
+  </widget>
+ </widget>
+ <connections/>
+</ui>

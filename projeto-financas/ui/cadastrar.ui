@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CadastroWindow</class>
+ <widget class="QMainWindow" name="CadastroWindow">
+  <property name="windowTitle">
+   <string>Cadastro de Usuário</string>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>100</x>
+    <y>100</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images/icon.png</normaloff>
+   </iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLineEdit" name="nome"/>
+      <property name="placeholderText">
+       <string>Nome</string>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLineEdit" name="senha">
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+      <property name="placeholderText">
+       <string>Senha</string>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLineEdit" name="salario">
+       <property name="validator">
+        <validator name="QIntValidator">
+         <property name="bottom">
+          <int>0</int>
+         </property>
+        </validator>
+       </property>
+      </widget>
+      <property name="placeholderText">
+       <string>Salário</string>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLineEdit" name="despesa">
+       <property name="validator">
+        <validator name="QIntValidator">
+         <property name="bottom">
+          <int>0</int>
+         </property>
+        </validator>
+       </property>
+      </widget>
+      <property name="placeholderText">
+       <string>Despesa</string>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLineEdit" name="investimentos">
+       <property name="validator">
+        <validator name="QIntValidator">
+         <property name="bottom">
+          <int>0</int>
+         </property>
+        </validator>
+       </property>
+      </widget>
+      <property name="placeholderText">
+       <string>Investimentos</string>
+      </property>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLineEdit" name="rendaextra"/>
+      <property name="placeholderText">
+       <string>Renda Extra</string>
+      </property>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLineEdit" name="veiculos"/>
+      <property name="placeholderText">
+       <string>Veículos</string>
+      </property>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLineEdit" name="gasolina"/>
+      <property name="placeholderText">
+       <string>Gasolina</string>
+      </property>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLineEdit" name="cursos"/>
+      <property name="placeholderText">
+       <string>Cursos</string>
+      </property>
+     </item>
+     <item row="9" column="0">
+      <widget class="QPushButton" name="cadastrar_btn">
+       <property name="text">
+        <string>Cadastrar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <connections/>
+</ui>
