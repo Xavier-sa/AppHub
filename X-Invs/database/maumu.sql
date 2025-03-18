@@ -140,35 +140,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`) VALUES
-(1, 'xavier', '1234'),
-(2, 'wellington', '1234'),
-(3, 'santos', '1234'),
-(14, 'Sonic', 'wellington'),
-(15, 'Trunks', 'trunks'),
-(16, 'Dim1', '1234'),
-(17, '4000', '12000'),
-(18, 'santoss', '12231324'),
-(19, 'xarfgsa', 'çkdsfa'),
-(20, 'hul', 'kkkkk'),
-(21, 'wellington teste', '1234'),
-(23, 'wellingtonx', '123456789'),
-(24, 'Dara Desiane', '123456789'),
-(25, 'dark', '123456789'),
-(27, 'dark1', '1234'),
-(28, 'darkt', '1234'),
-(29, 'daark', '1234'),
-(30, 'none', '1234'),
-(31, 'none1', '1234'),
-(32, 'none2', '1234'),
-(33, 'non3', '1234'),
-(34, 'nonee', '1'),
-(35, 'none12', '1234'),
-(36, 'non1e', '1234'),
-(37, 'darke', '1234'),
-(38, 'dark12', '1234'),
-(39, 'dark15', '1234'),
-(40, 'reicaveira ', '1234'),
-(41, 'asdfg', '1');
+(1, 'xavier', '1234');
 
 --
 -- Índices para tabelas despejadas
