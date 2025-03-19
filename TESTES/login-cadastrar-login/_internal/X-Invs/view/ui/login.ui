@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QDialog" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>412</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Login</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #222222;
+    color: #FFD700;
+    font-family: 'Arial', sans-serif;
+}
+
+QLabel {
+    color: #F57C00;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+QLineEdit {
+    background-color: #333333;
+    color: #FFD700;
+    border: 2px solid #F57C00;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+QPushButton {
+    background-color: #1976D2;
+    color: #FFFFFF;
+    border: 2px solid #F57C00;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+QPushButton:hover {
+    background-color: #F57C00;
+    color: #222222;
+    border-color: #FFD700;
+}
+
+QPushButton:pressed {
+    background-color: #D84315;
+}
+
+QLineEdit:focus {
+    border: 2px solid #FFD700;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_logo">
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;SENAC HUB &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;XAVIER&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;SOLUTIONS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_user">
+     <property name="placeholderText">
+      <string>Digite seu usuário</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_password">
+     <property name="echoMode">
+      <enum>QLineEdit::EchoMode::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>Digite sua senha</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btn_login">
+     <property name="text">
+      <string>Entrar</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
